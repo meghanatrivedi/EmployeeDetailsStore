@@ -15,6 +15,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        print("Document distorny:",FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).last ?? "Not Found")
         return true
     }
 
@@ -63,8 +65,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     // MARK: - Core Data Saving support
 
-    func saveContext () {
-        let context = persistentContainer.viewContext
+    func saveContext(Object:[String:String]) {
+            let context = persistentContainer.viewContext
+        let Employeemail = NSEntityDescription.insertNewObject(forEntityName: "Employeemail", into: context) as! Employeemail
+        Employeemail.emailID = Object["emailID"]
         if context.hasChanges {
             do {
                 try context.save()

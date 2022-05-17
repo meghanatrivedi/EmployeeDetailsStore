@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6551827E24BD055C9283CB01 /* Pods_EmployeeDetailsStore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79AA5CBDE8F2151BEDBEFBF9 /* Pods_EmployeeDetailsStore.framework */; };
 		C70AFC1428338B1A0081CF04 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C70AFC1328338B1A0081CF04 /* AppDelegate.swift */; };
 		C70AFC1628338B1A0081CF04 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C70AFC1528338B1A0081CF04 /* SceneDelegate.swift */; };
 		C70AFC1828338B1A0081CF04 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C70AFC1728338B1A0081CF04 /* ViewController.swift */; };
@@ -14,9 +15,22 @@
 		C70AFC1E28338B1A0081CF04 /* EmployeeDetailsStore.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C70AFC1C28338B1A0081CF04 /* EmployeeDetailsStore.xcdatamodeld */; };
 		C70AFC2028338B1C0081CF04 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C70AFC1F28338B1C0081CF04 /* Assets.xcassets */; };
 		C70AFC2328338B1C0081CF04 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C70AFC2128338B1C0081CF04 /* LaunchScreen.storyboard */; };
+		C70AFC3328338DD10081CF04 /* CategoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C70AFC3128338DD10081CF04 /* CategoryCell.swift */; };
+		C70AFC3428338DD10081CF04 /* CategoryCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C70AFC3228338DD10081CF04 /* CategoryCell.xib */; };
+		C70AFC3828338EBD0081CF04 /* EmployeeEmailCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C70AFC3628338EBD0081CF04 /* EmployeeEmailCell.swift */; };
+		C70AFC3928338EBD0081CF04 /* EmployeeEmailCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C70AFC3728338EBD0081CF04 /* EmployeeEmailCell.xib */; };
+		C70AFC41283394620081CF04 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C70AFC40283394620081CF04 /* CoreData.framework */; settings = {ATTRIBUTES = (Required, ); }; };
+		C70AFC43283395490081CF04 /* DatabaseHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = C70AFC42283395490081CF04 /* DatabaseHelper.swift */; };
+		C70AFC5A2833BC770081CF04 /* libswiftCoreData.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = C70AFC592833BC770081CF04 /* libswiftCoreData.tbd */; };
+		C70AFC5D2833BC8C0081CF04 /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C70AFC5C2833BC8C0081CF04 /* CoreText.framework */; };
+		C7BA9B812833BFBA00AEEF8C /* Employeemail+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7BA9B7D2833BFB900AEEF8C /* Employeemail+CoreDataClass.swift */; };
+		C7BA9B832833BFBA00AEEF8C /* Employeemail+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7BA9B7E2833BFB900AEEF8C /* Employeemail+CoreDataProperties.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4B5767746F6D409C5ACFEE07 /* Pods-EmployeeDetailsStore.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EmployeeDetailsStore.release.xcconfig"; path = "Target Support Files/Pods-EmployeeDetailsStore/Pods-EmployeeDetailsStore.release.xcconfig"; sourceTree = "<group>"; };
+		6648EFB28E9C490061264A9C /* Pods-EmployeeDetailsStore.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EmployeeDetailsStore.debug.xcconfig"; path = "Target Support Files/Pods-EmployeeDetailsStore/Pods-EmployeeDetailsStore.debug.xcconfig"; sourceTree = "<group>"; };
+		79AA5CBDE8F2151BEDBEFBF9 /* Pods_EmployeeDetailsStore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EmployeeDetailsStore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C70AFC1028338B1A0081CF04 /* EmployeeDetailsStore.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EmployeeDetailsStore.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C70AFC1328338B1A0081CF04 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C70AFC1528338B1A0081CF04 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -26,6 +40,16 @@
 		C70AFC1F28338B1C0081CF04 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C70AFC2228338B1C0081CF04 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C70AFC2428338B1C0081CF04 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C70AFC3128338DD10081CF04 /* CategoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCell.swift; sourceTree = "<group>"; };
+		C70AFC3228338DD10081CF04 /* CategoryCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CategoryCell.xib; sourceTree = "<group>"; };
+		C70AFC3628338EBD0081CF04 /* EmployeeEmailCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeEmailCell.swift; sourceTree = "<group>"; };
+		C70AFC3728338EBD0081CF04 /* EmployeeEmailCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EmployeeEmailCell.xib; sourceTree = "<group>"; };
+		C70AFC40283394620081CF04 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		C70AFC42283395490081CF04 /* DatabaseHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseHelper.swift; sourceTree = "<group>"; };
+		C70AFC592833BC770081CF04 /* libswiftCoreData.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libswiftCoreData.tbd; path = usr/lib/swift/libswiftCoreData.tbd; sourceTree = SDKROOT; };
+		C70AFC5C2833BC8C0081CF04 /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
+		C7BA9B7D2833BFB900AEEF8C /* Employeemail+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Employeemail+CoreDataClass.swift"; path = "/Users/meghna/Documents/Project/EmployeeDetailsStore/EmployeeDetailsStore/Employeemail+CoreDataClass.swift"; sourceTree = "<absolute>"; };
+		C7BA9B7E2833BFB900AEEF8C /* Employeemail+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Employeemail+CoreDataProperties.swift"; path = "/Users/meghna/Documents/Project/EmployeeDetailsStore/EmployeeDetailsStore/Employeemail+CoreDataProperties.swift"; sourceTree = "<absolute>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +57,32 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C70AFC5D2833BC8C0081CF04 /* CoreText.framework in Frameworks */,
+				C70AFC5A2833BC770081CF04 /* libswiftCoreData.tbd in Frameworks */,
+				C70AFC41283394620081CF04 /* CoreData.framework in Frameworks */,
+				6551827E24BD055C9283CB01 /* Pods_EmployeeDetailsStore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		39EC65B19B820A3139776F81 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6648EFB28E9C490061264A9C /* Pods-EmployeeDetailsStore.debug.xcconfig */,
+				4B5767746F6D409C5ACFEE07 /* Pods-EmployeeDetailsStore.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		C70AFC0728338B1A0081CF04 = {
 			isa = PBXGroup;
 			children = (
 				C70AFC1228338B1A0081CF04 /* EmployeeDetailsStore */,
 				C70AFC1128338B1A0081CF04 /* Products */,
+				39EC65B19B820A3139776F81 /* Pods */,
+				EC2C0190512BC179825DA063 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,14 +99,32 @@
 			children = (
 				C70AFC1328338B1A0081CF04 /* AppDelegate.swift */,
 				C70AFC1528338B1A0081CF04 /* SceneDelegate.swift */,
+				C7BA9B7D2833BFB900AEEF8C /* Employeemail+CoreDataClass.swift */,
+				C7BA9B7E2833BFB900AEEF8C /* Employeemail+CoreDataProperties.swift */,
 				C70AFC1728338B1A0081CF04 /* ViewController.swift */,
 				C70AFC1928338B1A0081CF04 /* Main.storyboard */,
 				C70AFC1F28338B1C0081CF04 /* Assets.xcassets */,
 				C70AFC2128338B1C0081CF04 /* LaunchScreen.storyboard */,
 				C70AFC2428338B1C0081CF04 /* Info.plist */,
 				C70AFC1C28338B1A0081CF04 /* EmployeeDetailsStore.xcdatamodeld */,
+				C70AFC3128338DD10081CF04 /* CategoryCell.swift */,
+				C70AFC3228338DD10081CF04 /* CategoryCell.xib */,
+				C70AFC3628338EBD0081CF04 /* EmployeeEmailCell.swift */,
+				C70AFC3728338EBD0081CF04 /* EmployeeEmailCell.xib */,
+				C70AFC42283395490081CF04 /* DatabaseHelper.swift */,
 			);
 			path = EmployeeDetailsStore;
+			sourceTree = "<group>";
+		};
+		EC2C0190512BC179825DA063 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C70AFC5C2833BC8C0081CF04 /* CoreText.framework */,
+				C70AFC592833BC770081CF04 /* libswiftCoreData.tbd */,
+				C70AFC40283394620081CF04 /* CoreData.framework */,
+				79AA5CBDE8F2151BEDBEFBF9 /* Pods_EmployeeDetailsStore.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -77,9 +134,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C70AFC2728338B1C0081CF04 /* Build configuration list for PBXNativeTarget "EmployeeDetailsStore" */;
 			buildPhases = (
+				5A8C6596CC27495C1B32DF1B /* [CP] Check Pods Manifest.lock */,
 				C70AFC0C28338B1A0081CF04 /* Sources */,
 				C70AFC0D28338B1A0081CF04 /* Frameworks */,
 				C70AFC0E28338B1A0081CF04 /* Resources */,
+				BB4431758C8782F230FFFD22 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -130,10 +189,54 @@
 				C70AFC2328338B1C0081CF04 /* LaunchScreen.storyboard in Resources */,
 				C70AFC2028338B1C0081CF04 /* Assets.xcassets in Resources */,
 				C70AFC1B28338B1A0081CF04 /* Main.storyboard in Resources */,
+				C70AFC3428338DD10081CF04 /* CategoryCell.xib in Resources */,
+				C70AFC3928338EBD0081CF04 /* EmployeeEmailCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5A8C6596CC27495C1B32DF1B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-EmployeeDetailsStore-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BB4431758C8782F230FFFD22 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-EmployeeDetailsStore/Pods-EmployeeDetailsStore-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-EmployeeDetailsStore/Pods-EmployeeDetailsStore-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-EmployeeDetailsStore/Pods-EmployeeDetailsStore-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		C70AFC0C28338B1A0081CF04 /* Sources */ = {
@@ -141,9 +244,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				C70AFC1E28338B1A0081CF04 /* EmployeeDetailsStore.xcdatamodeld in Sources */,
+				C7BA9B832833BFBA00AEEF8C /* Employeemail+CoreDataProperties.swift in Sources */,
 				C70AFC1828338B1A0081CF04 /* ViewController.swift in Sources */,
+				C70AFC3828338EBD0081CF04 /* EmployeeEmailCell.swift in Sources */,
+				C7BA9B812833BFBA00AEEF8C /* Employeemail+CoreDataClass.swift in Sources */,
+				C70AFC43283395490081CF04 /* DatabaseHelper.swift in Sources */,
 				C70AFC1428338B1A0081CF04 /* AppDelegate.swift in Sources */,
 				C70AFC1628338B1A0081CF04 /* SceneDelegate.swift in Sources */,
+				C70AFC3328338DD10081CF04 /* CategoryCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -287,6 +395,7 @@
 		};
 		C70AFC2828338B1C0081CF04 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6648EFB28E9C490061264A9C /* Pods-EmployeeDetailsStore.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -295,6 +404,10 @@
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SDKROOT)/usr/lib/swift",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.meghana.EmployeeDetailsStore;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -305,6 +418,7 @@
 		};
 		C70AFC2928338B1C0081CF04 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4B5767746F6D409C5ACFEE07 /* Pods-EmployeeDetailsStore.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -313,6 +427,10 @@
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SDKROOT)/usr/lib/swift",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.meghana.EmployeeDetailsStore;
 				PRODUCT_NAME = "$(TARGET_NAME)";

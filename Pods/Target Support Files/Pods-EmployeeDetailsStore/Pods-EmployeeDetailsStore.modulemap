@@ -1,0 +1,6 @@
+framework module Pods_EmployeeDetailsStore {
+  umbrella header "Pods-EmployeeDetailsStore-umbrella.h"
+
+  export *
+  module * { export * }
+}
